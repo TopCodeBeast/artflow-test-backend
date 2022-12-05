@@ -8,7 +8,8 @@ const cors = require("cors");
 // import routes
 const routes = require("./routes");
 
-app.use(cors(appConfig.corsOptions));
+// app.use(cors(appConfig.corsOptions));
+app.use(cors());
 
 // parse requests of content-type - application/json
 app.use(express.json());
